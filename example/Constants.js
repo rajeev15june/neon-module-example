@@ -1,0 +1,10 @@
+export const OPEN_NEUTRAL = 1;
+export const OPEN_CAMERA = 2;
+export const OPEN_CAMERA_PRIORITY = 3;
+export const OPEN_GALLERY_FOLDERS = 4;
+export const OPEN_GALLERY_FOLDERS_PRIORITY = 5;
+export const OPEN_GALLERY_FILES = 6;
+export const OPEN_GALLERY_FILES_PRIORITY = 7;
+export const OPEN_GALLERY_HORIZONTAL = 8;
+export const OPEN_GALLERY_HORIZONTAL_PRIORITY = 9;
+export const OPEN_LIVE_PHOTOS = 10;
