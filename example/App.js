@@ -77,6 +77,7 @@ export default class App extends Component<Props> {
                 params.cameraOrientation = 1;
                 params.flashEnabled = true;
                 params.cameraSwitchingEnabled = true;
+                params.cameraToGallerySwitchEnabled = false;
                 params.alreadyAddedImagesJson = JSON.stringify(this.state.alreadyAddedImages);
                 NeonAndroid.collectPhotos(NeonAndroid.OPEN_CAMERA, JSON.stringify(params), (imageCollectionJson) => this.prepareList(imageCollectionJson));
                 break;
