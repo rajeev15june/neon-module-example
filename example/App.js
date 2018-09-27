@@ -147,7 +147,9 @@ export default class App extends Component<Props> {
                 NeonAndroid.collectPhotos(NeonAndroid.OPEN_GALLERY, JSON.stringify(params), (imageCollectionJson) => this.prepareList(imageCollectionJson));
                 break;
             case Constants.OPEN_LIVE_PHOTOS:
-                NeonAndroid.livePhotos(JSON.stringify(params), (imageCollectionJson) => this.prepareList(imageCollectionJson));
+                NeonAndroid.oneStepPhotos('ID', 'PAN',(imageCollectionJson) => this.prepareList(imageCollectionJson));
+
+                //NeonAndroid.livePhotos(JSON.stringify(params), (imageCollectionJson) => this.prepareList(imageCollectionJson));
                 break;
 
         }
