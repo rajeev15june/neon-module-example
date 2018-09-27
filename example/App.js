@@ -148,7 +148,6 @@ export default class App extends Component<Props> {
                 break;
             case Constants.OPEN_LIVE_PHOTOS:
                 NeonAndroid.oneStepPhotos('ID', 'PAN',(imageCollectionJson) => this.prepareList(imageCollectionJson));
-
                 //NeonAndroid.livePhotos(JSON.stringify(params), (imageCollectionJson) => this.prepareList(imageCollectionJson));
                 break;
 
