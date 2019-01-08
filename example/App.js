@@ -165,6 +165,9 @@ export default class App extends Component<Props> {
                 NeonAndroid.openLivePhotos(JSON.stringify(params), (response) => this.prepareList(response));
                 //NeonAndroid.oneStepPhotos('ID', 'PAN',(response) => this.prepareList(response));
                 break;
+            case Constants.OPEN_ONE_STEP:
+                NeonAndroid.openOneStep('ID', 'PAN', null, (response) => this.prepareList(response));
+                break;
 
         }
     }
@@ -259,6 +262,12 @@ export default class App extends Component<Props> {
                     <TouchableNativeFeedback onPress={() => this.openNeon(Constants.OPEN_LIVE_PHOTOS)}>
                         <Text style={styles.instructions}>
                             Live Photos
+                        </Text>
+                    </TouchableNativeFeedback>
+
+                    <TouchableNativeFeedback onPress={() => this.openNeon(Constants.OPEN_ONE_STEP)}>
+                        <Text style={styles.instructions}>
+                            One Step
                         </Text>
                     </TouchableNativeFeedback>
 

@@ -8,3 +8,4 @@ export const OPEN_GALLERY_FILES_PRIORITY = 7;
 export const OPEN_GALLERY_HORIZONTAL = 8;
 export const OPEN_GALLERY_HORIZONTAL_PRIORITY = 9;
 export const OPEN_LIVE_PHOTOS = 10;
+export const OPEN_ONE_STEP = 11;
